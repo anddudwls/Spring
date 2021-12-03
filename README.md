@@ -19,3 +19,7 @@ RequestMapping 에 대한 이해
 21.12.01
 Day 5일차
 validation 에 대한 이해
+
+21.12.03
+Day 6일차
+Thymeleaf 에 대한 이해
