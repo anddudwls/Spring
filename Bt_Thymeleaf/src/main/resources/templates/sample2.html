@@ -1,0 +1,82 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Thymeleaf3</title>
+</head>
+<body>
+	<h4 th:text="${vo}"></h4>  <!-- ${ } 객체,변수 표현 -->
+	<h4 th:text="vo"></h4>
+	
+	<div th:text="${'aaa'}"></div>
+	<div th:text="${aaa}"></div>  <!-- 에러는 아니다, 없는객체/변수는 표현안함 -->
+	<div th:text="${'aaa' + 'bbb'}"></div>
+	<!-- <div th:text="${aaa + bbb}"></div> --> <!-- 에러, 없는객체/변수끼리 연산 불가 -->
+	<div th:text="${'aaa' + 10 + 'bbb'}"></div>
+	
+	<div th:text="${10 + 20}"></div>
+	<div th:text="${10 - 20}"></div>
+	<div th:text="${10 / 20}"></div>
+	<div th:text="${10.0 / 20}"></div>
+	<div th:text="${10 * 20}"></div>
+	<div th:text="${10 % 3}"></div>
+
+	<div th:text="10 + 20"></div>
+	<div th:text="10 - 20"></div>
+	<div th:text="vo + 20"></div>
+	<div th:text="aaa + bbb"></div>
+	<div th:text="${vo} + 20"></div>
+	<div th:text="${vo.name}"></div>
+	<div th:text="${vo.regdate}"></div>
+	<div th:text="${vo.no} + 20"></div>
+	<div th:text="aaa + (10 + 20)"></div>
+	<div th:text="aaa + 10 + 20"></div>
+	<div th:text="10 > 4"></div>
+	<!-- <div th:text="true && false"></div> -->  <!--  에러  -->
+	<div th:text="${true && false}"></div>
+	<div th:text="!false"></div>
+	<div th:text="(10 > 4) ? big : small"></div>
+	
+	
+	<div th:text="${'<h3>' + vo.id + '</h3>'}"></div>
+	<div th:utext="${'<h3>' + vo.id + '</h3>'}"></div>
+	
+	
+	<!-- escaping 하기  What's up? 출력 -->
+	<h3>escaping 하기</h3>
+	<div th:text="${'What''s up?'}"></div>
+	<div th:text="'What\'s up?'"></div>
+
+	
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

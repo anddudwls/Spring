@@ -1,0 +1,103 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Thymeleaf3</title>
+<style>
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+table {
+	width: 100%;
+}
+</style>
+</head>
+<body>
+	<h3>list</h3>
+	<table th:inline="text">
+		<tr>
+			<td>ID</td>
+			<td>NAME</td>
+			<td>REGDATE</td>
+		</tr>
+		
+		<tr th:each="member : ${list}">
+			<td>[[${member.id}]]</td>
+			<td>[[${member.name}]]</td>
+			<td>[[${member.regdate}]]</td>
+		</tr>
+	</table>
+	
+	<h3 th:if="${list} and ${#lists.size(list)} > 0">[[${#lists.size(list)}]]개</h3>
+	<h3 th:if="${list2} and ${#lists.size(list2)} >= 0">[[${#lists.size(list2)}]]개</h3>
+	<h3 th:if="${list3} and ${#lists.size(list3)} >= 0">[[${#lists.size(list3)}]]개</h3>
+	
+	<h3>list2 - empty</h3>
+	<table th:inline="text">
+		<tr>
+			<td>ID</td>
+			<td>NAME</td>
+			<td>REGDATE</td>
+		</tr>
+		
+		<tr th:each="member : ${list2}">
+			<td>[[${member.id}]]</td>
+			<td>[[${member.name}]]</td>
+			<td>[[${member.regdate}]]</td>
+		</tr>
+	</table>
+	
+	
+	<h3>list3 - null</h3>
+	<table th:inline="text">
+		<tr>
+			<td>ID</td>
+			<td>NAME</td>
+			<td>REGDATE</td>
+		</tr>
+		
+		<tr th:each="member : ${list3}">
+			<td>[[${member.id}]]</td>
+			<td>[[${member.name}]]</td>
+			<td>[[${member.regdate}]]</td>
+		</tr>
+	</table>
+	
+ <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
