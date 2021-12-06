@@ -23,3 +23,7 @@ validation 에 대한 이해
 21.12.03
 Day 6일차
 Thymeleaf 에 대한 이해
+
+21.12.06
+Day 7일차
+RequestParam 에 대한 이해
