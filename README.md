@@ -27,3 +27,7 @@ Thymeleaf 에 대한 이해
 21.12.06
 Day 7일차
 RequestParam 에 대한 이해
+
+21.12.07
+Day 8일차
+Mybatis 에 대한 이해
