@@ -35,3 +35,6 @@ Mybatis 에 대한 이해
 21.12.08
 Day 9일차
 Thymeleaf 에 대한 
+
+21.12.13
+JPA 에 대한 이해
